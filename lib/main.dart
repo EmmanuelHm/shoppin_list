@@ -9,9 +9,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Firebase y Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xff2c2b50),
+        primaryColorDark: Color(0xff050028),
+        primaryColorLight: Color(0xff57547c),
+
+        accentColor: Color(0xffedecee),
+        // backgroundColor: Color(0xffffffff),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const MyHomePage(),
     );
