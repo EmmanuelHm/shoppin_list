@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_list/Utils/AssetsImages.dart';
+import 'package:shopping_list/Utils/ConstantsApp.dart';
+import 'package:splash_screen_view/SplashScreenView.dart';
+
+import 'Screens/Login/WelcomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Firebase y Flutter',
       theme: ThemeData(
         primaryColor: Color(0xff2c2b50),
@@ -34,6 +40,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), body: Center());
+    return SplashScreenView(
+      navigateRoute: WelcomeScreen(),
+      duration: ConstantsApp.TIME_SPLASH_SCREEN,
+      imageSize: 330,
+      imageSrc: AssetsImages.image,
+      backgroundColor: Colors.grey[300],
+    );
   }
 }
