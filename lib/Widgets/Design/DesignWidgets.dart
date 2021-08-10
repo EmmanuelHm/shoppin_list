@@ -15,19 +15,35 @@ class DesignWidgets {
         ]);
   }
 
+  // Title custom
   static RichText titleCustom() {
     return RichText(
         textAlign: TextAlign.center,
         text: TextSpan(
-            text: "Vera",
+            text: "Shopping",
             style: GoogleFonts.portLligatSans(
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
                 color: Colors.white60),
             children: [
               TextSpan(
-                  text: "Design",
+                  text: "List",
                   style: TextStyle(color: Colors.white, fontSize: 30))
+            ]));
+  }
+
+  // Title custom Dark
+  static RichText titleCustomDark() {
+    return RichText(
+        textAlign: TextAlign.center,
+        text: TextSpan(
+            text: "Shopping",
+            style: GoogleFonts.portLligatSans(
+                fontSize: 30, fontWeight: FontWeight.w700, color: Colors.grey),
+            children: [
+              TextSpan(
+                  text: "List",
+                  style: TextStyle(color: Colors.black, fontSize: 30))
             ]));
   }
 }

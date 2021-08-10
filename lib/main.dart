@@ -3,7 +3,7 @@ import 'package:shopping_list/Utils/AssetsImages.dart';
 import 'package:shopping_list/Utils/ConstantsApp.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
-import 'Screens/Login/WelcomeScreen.dart';
+import 'Screens/SplashScreen/WelcomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
